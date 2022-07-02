@@ -1,0 +1,150 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+.navbar {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem; }
+  .navbar__title {
+    font-family: "Caveat", cursive;
+    font-size: 2rem; }
+
+.footer__underlist {
+  display: flex;
+  justify-content: right;
+  margin-right: 5rem; }
+
+.footer__list {
+  list-style: none;
+  padding: 1rem; }
+
+.contenedor__img {
+  height: 625px;
+  width: 600px;
+  clip-path: polygon(0 0, 100% 0%, 33% 100%, 0% 100%); }
+
+.contenedor__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center; }
+
+.title__uno {
+  font-family: 'Caveat', cursive;
+  font-size: 5rem;
+  font-weight: 600;
+  font-style: oblique;
+  color: black; }
+
+.title__dos {
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+  font-weight: 300;
+  color: black; }
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "img .    " "img title" "img footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
+
+.contenedor__img {
+  grid-area: img; }
+
+.contenedor__title {
+  grid-area: title; }
+
+.contenedor__footer {
+  grid-area: footer; }
+
+.contenedor__footer {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end; }
+
+.contenedor__nosotros {
+  display: grid;
+  grid-template-areas: "img article" "img article" "img footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
+
+.contenedor__img {
+  grid-area: img; }
+
+.contenedor__article {
+  grid-area: article; }
+
+.contenedor__footer {
+  grid-area: footer; }
+
+.contenedor__article {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  padding: 100px 40px 0px 0px; }
+
+.article__parrafo {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  font-weight: 200; }
+
+.galeria {
+  padding: 50px 30px 30px 10px;
+  display: flex;
+  gap: 15px;
+  flex-basis: 100%; }
+  .galeria__img {
+    flex-basis: 100%;
+    padding: 50px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+
+.contenedor3 {
+  display: grid;
+  grid-template-areas: "img decrip" "img mapa" "img footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
+
+.img {
+  grid-area: img; }
+
+.descrip {
+  grid-area: descrip; }
+
+.mapa {
+  grid-area: mapa; }
+
+.footer {
+  grid-area: footer; }
+
+.contenedor__contacto {
+  display: grid;
+  grid-template-areas: "img form" "img form" "img footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr; }
+
+.contenedor__img {
+  grid-area: img; }
+
+.contenedor__formulario {
+  grid-area: form; }
+
+.contenedor__footer {
+  grid-area: footer; }
+
+.contenedor__formulario {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px; }
+
+.formulario__title {
+  font-weight: bolder;
+  font-size: 2.5rem; }
+
+.formulario__boton {
+  font-size: 1rem;
+  font-weight: bold; }

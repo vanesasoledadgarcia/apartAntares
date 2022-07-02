@@ -1,0 +1,27 @@
+.contenedor3{
+    display: grid;
+    grid-template-areas: 
+                    "img decrip"
+                    "img mapa"
+                    "img footer";
+
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+
+}
+
+.img{
+    grid-area: img;
+}
+
+.descrip{
+    grid-area: descrip;
+}
+
+.mapa{
+    grid-area: mapa;
+}
+
+.footer{
+    grid-area: footer;
+}

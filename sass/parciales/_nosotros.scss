@@ -1,0 +1,38 @@
+.contenedor__nosotros{
+    display: grid;
+    grid-template-areas: 
+                    "img article"
+                    "img article"
+                    "img footer";
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+
+}
+
+.contenedor__img{
+    grid-area: img;
+}
+
+.contenedor__article{
+    grid-area: article;
+}
+
+.contenedor__footer{
+    grid-area: footer;
+}
+
+.contenedor__article{
+    display: flex;
+    flex-direction: column;
+    align-content:space-between;
+    padding: 100px 40px 0px 0px;
+}
+
+
+.article__parrafo{
+    font-family: $typo;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+
