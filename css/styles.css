@@ -101,23 +101,30 @@
     align-items: center;
     justify-content: space-between; }
 
-.contenedor3 {
+.contenedor__ubicacion {
   display: grid;
-  grid-template-areas: "img decrip" "img mapa" "img footer";
+  grid-template-areas: "img descrip" "img mapa" "img footer";
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr; }
 
-.img {
+.contenedor__img {
   grid-area: img; }
 
-.descrip {
+.contenedor__descripcion {
   grid-area: descrip; }
 
-.mapa {
+.contenedor__mapa {
   grid-area: mapa; }
 
-.footer {
+.contenedor__footer {
   grid-area: footer; }
+
+.contenedor__descripcion {
+  font-family: "Caveat", cursive; }
+
+.contenedor__mapa {
+  display: flex;
+  align-content: center; }
 
 .contenedor__contacto {
   display: grid;
@@ -148,3 +155,92 @@
 .formulario__boton {
   font-size: 1rem;
   font-weight: bold; }
+
+@media screen and (max-width: 1000px) {
+  /*index*/
+  .title__uno {
+    font-size: 3rem;
+    font-weight: 300; }
+  .title__dos {
+    font-size: 1.5rem;
+    font-weight: normal; }
+  /*galeria*/
+  .galeria {
+    padding: 20px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+    .galeria__img {
+      padding: 0px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between; }
+    .galeria__img1 {
+      padding: 10px 10px 10px 10px; }
+    .galeria__img2 {
+      padding: 10px 10px 10px 10px; }
+    .galeria__img3 {
+      padding: 10px 10px 10px 10px; }
+    .galeria__img4 {
+      padding: 10px 10px 10px 10px; } }
+
+@media screen and (max-width: 600px) {
+  /*index*/
+  .contenedor {
+    display: grid;
+    grid-template-areas: "img " "img " "img " "title" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
+    .contenedor__img {
+      grid-area: img; }
+    .contenedor__title {
+      grid-area: title; }
+    .contenedor__footer {
+      grid-area: footer; }
+    .contenedor__title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      padding: 100px 1px 2px 200px; }
+  /*contacto*/
+  .contenedor__contacto {
+    display: grid;
+    grid-template-areas: "img" "img" "img" "form" "form" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 0.5fr; }
+  .contenedor__img {
+    grid-area: img; }
+  .contenedor__formulario {
+    grid-area: form; }
+  .contenedor__footer {
+    grid-area: footer; }
+  .contenedor__formulario {
+    padding-top: 10px; }
+  /*nosotros*/
+  .contenedor__nosotros {
+    display: grid;
+    grid-template-areas: "img" "img" "img" "article" "article" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .contenedor__img {
+    grid-area: img; }
+  .contenedor__article {
+    grid-area: article; }
+  .contenedor__footer {
+    grid-area: footer; }
+  /*ubicacion*/
+  .contenedor3 {
+    display: grid;
+    grid-template-areas: "img" "img" "img" "mapa" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; }
+  .img {
+    grid-area: img; }
+  .descrip {
+    grid-area: descrip; }
+  .mapa {
+    grid-area: mapa; }
+  .footer {
+    grid-area: footer; } }

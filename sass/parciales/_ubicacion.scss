@@ -1,7 +1,7 @@
-.contenedor3{
+.contenedor__ubicacion{
     display: grid;
     grid-template-areas: 
-                    "img decrip"
+                    "img descrip"
                     "img mapa"
                     "img footer";
 
@@ -10,18 +10,27 @@
 
 }
 
-.img{
+.contenedor__img{
     grid-area: img;
 }
 
-.descrip{
+.contenedor__descripcion{
     grid-area: descrip;
 }
 
-.mapa{
+.contenedor__mapa{
     grid-area: mapa;
 }
 
-.footer{
+.contenedor__footer{
     grid-area: footer;
+}
+
+.contenedor__descripcion{
+    font-family: $typo;
+}
+
+.contenedor__mapa{
+    display: flex;
+    align-content: center;
 }
