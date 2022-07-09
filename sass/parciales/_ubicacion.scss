@@ -4,10 +4,8 @@
                     "img descrip"
                     "img mapa"
                     "img footer";
-
     grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
-
+    grid-template-rows: 0.75fr 1fr 0.5fr ;
 }
 
 .contenedor__img{
@@ -28,9 +26,8 @@
 
 .contenedor__descripcion{
     font-family: $typo;
-}
-
-.contenedor__mapa{
+    font-size: 1.5rem;
+    padding: 100px 30px 0px 0px;
     display: flex;
     align-content: center;
 }

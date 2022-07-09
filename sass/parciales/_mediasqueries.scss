@@ -147,35 +147,41 @@
 
 /*ubicacion*/
 
-.contenedor3{
+.contenedor__ubicacion{
     display: grid;
     grid-template-areas: 
                     "img"
                     "img"
                     "img"
+                    "descrip"
                     "mapa"
                     "footer";
-
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-
+    grid-template-rows: 1fr 1fr 1fr 0.75fr 1fr 0.5fr;
 }
 
-.img{
+.contenedor__img{
     grid-area: img;
 }
 
-.descrip{
+.contenedor__descripcion{
     grid-area: descrip;
 }
 
-.mapa{
+.contenedor__mapa{
     grid-area: mapa;
 }
 
-.footer{
+.contenedor__footer{
     grid-area: footer;
 }
 
+.contenedor__descripcion{
+    padding: 0px 30px 0px 30px;
+}
+
+.contenedor__mapa{
+    padding-left: 100px;
+}
 
 }

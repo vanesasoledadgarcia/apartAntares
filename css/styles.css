@@ -105,7 +105,7 @@
   display: grid;
   grid-template-areas: "img descrip" "img mapa" "img footer";
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr; }
+  grid-template-rows: 0.75fr 1fr 0.5fr; }
 
 .contenedor__img {
   grid-area: img; }
@@ -120,9 +120,9 @@
   grid-area: footer; }
 
 .contenedor__descripcion {
-  font-family: "Caveat", cursive; }
-
-.contenedor__mapa {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  padding: 100px 30px 0px 0px;
   display: flex;
   align-content: center; }
 
@@ -231,16 +231,20 @@
   .contenedor__footer {
     grid-area: footer; }
   /*ubicacion*/
-  .contenedor3 {
+  .contenedor__ubicacion {
     display: grid;
-    grid-template-areas: "img" "img" "img" "mapa" "footer";
+    grid-template-areas: "img" "img" "img" "descrip" "mapa" "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; }
-  .img {
+    grid-template-rows: 1fr 1fr 1fr 0.75fr 1fr 0.5fr; }
+  .contenedor__img {
     grid-area: img; }
-  .descrip {
+  .contenedor__descripcion {
     grid-area: descrip; }
-  .mapa {
+  .contenedor__mapa {
     grid-area: mapa; }
-  .footer {
-    grid-area: footer; } }
+  .contenedor__footer {
+    grid-area: footer; }
+  .contenedor__descripcion {
+    padding: 0px 30px 0px 30px; }
+  .contenedor__mapa {
+    padding-left: 100px; } }
